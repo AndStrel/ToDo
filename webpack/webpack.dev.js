@@ -12,7 +12,7 @@ module.exports = {
 		hot: true,
 	},
 	output: {
-		path: path.resolve(__dirname, 'dist'), 
+		path: path.resolve(__dirname, '..', './dist'), 
 		filename: 'static/scripts/[name].[contenthash].js',
 	  },
 	plugins: [new ReactRefreshWebpackPlugin()],
