@@ -11,5 +11,9 @@ module.exports = {
 		open: true, // сайт будет открываться сам при запуске npm run dev
 		hot: true,
 	},
+	output: {
+		path: path.resolve(__dirname, 'dist'), 
+		filename: 'static/scripts/[name].[contenthash].js',
+	  },
 	plugins: [new ReactRefreshWebpackPlugin()],
 }
