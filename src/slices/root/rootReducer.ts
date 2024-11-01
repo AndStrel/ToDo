@@ -1,18 +1,10 @@
-import { combineReducers } from '@reduxjs/toolkit';
-import ingredientsReducer from '../ingredients/ingredientsSlice';
-import constructorItemsSlice from '../constructorItem/constructorItemsSlice';
-import orderSlice from '../order/orderSlice';
-import ordersDataSlice from '../ordersData/ordersDataSlice';
-import userOrdersSlice from '../userOrders/userOrdersSlice';
-import authSlice from '../auth/authSlice';
+import { combineReducers } from '@reduxjs/toolkit'
+import todoReducer from '../todo/toDoReducer'
+import filterReducer from '../filter/filterReducer'
 
 const rootReducer = combineReducers({
-  ingredients: ingredientsReducer,
-  constructorItems: constructorItemsSlice,
-  ordersData: ordersDataSlice,
-  order: orderSlice,
-  userOrders: userOrdersSlice,
-  auth: authSlice
-});
+	todo: todoReducer,
+	filter: filterReducer,
+})
 
-export default rootReducer;
+export default rootReducer
