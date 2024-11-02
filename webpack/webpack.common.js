@@ -80,7 +80,7 @@ module.exports = {
 	},
 	plugins: [
 		new HTMLWebpackPlugins({
-			template: path.resolve(__dirname, '..', './public/index.html'), 
+			template: path.resolve(__dirname, '..', './dist/index.html'), 
 			filename: 'index.html',
 			inject: 'body',
 		}),
